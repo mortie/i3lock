@@ -3,7 +3,7 @@
 echo-version:
 	@echo "@I3LOCK_VERSION@"
 
-bin_PROGRAMS = i3lock i3lock-tty-lock
+bin_PROGRAMS = i3lock i3lock-tty-switching
 
 dist_man1_MANS = i3lock.1
 
@@ -59,4 +59,4 @@ EXTRA_DIST = \
 
 # SUID the executable so it has permissions to lock TTY switching
 install-exec-hook:
-	chmod +s $(DESTDIR)$(bindir)/i3lock-tty-lock$(EXEEXT)
+	chmod +s $(DESTDIR)$(bindir)/i3lock-tty$(EXEEXT)
