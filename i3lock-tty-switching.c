@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
     }
 
     if (ioctl(term, req) < 0) {
-        perror("/dev/consol");
+        perror("/dev/console");
     }
 
     return EXIT_SUCCESS;
